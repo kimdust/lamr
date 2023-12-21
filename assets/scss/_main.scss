@@ -1,0 +1,307 @@
+#main {
+  .intro {
+    height: 960px;
+    .intro_top {
+      background-image: url(/images/main/480-intro-top.png);
+      position: absolute;
+      margin-top: 3.75rem;
+      width: 100%;
+      height: 450px;
+      h2,
+      p {
+        position: absolute;
+        color: $white;
+        padding: 1.25rem;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+      h2 {
+        font-size: 1.25rem;
+        font-weight: bolder;
+      }
+      p {
+        margin-top: 2.5rem;
+        font-size: 0.8125rem;
+        font-weight: 300;
+      }
+    }
+    .intro_bottom {
+      background-image: url(/images/main/480-intro-bottom.png);
+      position: absolute;
+      margin-top: 510px;
+      width: 100%;
+      height: 450px;
+      h2,
+      p {
+        position: absolute;
+        padding: 1.25rem;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+      h2 {
+        font-size: 1.25rem;
+        font-weight: bolder;
+      }
+      p {
+        margin-top: 2.5rem;
+        font-size: 0.8125rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  @media (min-width: 481px) {
+    .intro {
+      .intro_top {
+        background-image: url(/images/main/1280-intro-top.png);
+        height: 450px;
+        h2,
+        p {
+          top: 200px;
+        }
+      }
+      .intro_bottom {
+        background-image: url(/images/main/1280-intro-bottom.png);
+        margin-top: 510px;
+        height: 450px;
+        h2,
+        p {
+          top: 200px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .intro {
+      position: relative;
+      .intro_top,
+      .intro_bottom {
+        position: relative;
+        width: 50%;
+        height: 895px;
+        display: block;
+        float: left;
+        h2,
+        p {
+          top: 600px;
+        }
+      }
+      .intro_top {
+        background-image: url(/images/main/D-intro-top.png);
+      }
+      .intro_bottom {
+        background-image: url(/images/main/D-intro-bottom.png);
+        margin-top: 3.75rem;
+      }
+    }
+  }
+
+  .bestitem {
+    height: 700px;
+    padding: 100px 0;
+    h2 {
+      font-family: "Newyork";
+      font-size: 1.25rem;
+    }
+    swiper-container {
+      margin: 20px;
+      --swiper-theme-color: #326b36;
+      swiper-button-next svg,
+      swiper-button-prev svg {
+        width: 50%;
+      }
+    }
+    swiper-slide {
+      a {
+        img {
+          background-color: $gray-200;
+          width: 200px;
+          margin: 30px 0 20px 0;
+        }
+        strong {
+          display: block;
+          font-size: 1.25rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 300;
+          color: $gray-500;
+          margin-bottom: 10px;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    height: 450px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h2 {
+      font-family: "Newyork";
+      font-size: 1.25rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .benefits_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      width: calc(50% - 20px);
+      height: 130px;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .box1 {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url(/images/main/benefits01.png);
+        background-size: 55px 55px;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+    }
+    .box2 {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url(/images/main/benefits02.png);
+        background-size: 55px 55px;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+    }
+    .box3 {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url(/images/main/benefits03.png);
+        background-size: 55px 55px;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+    }
+    .box4 {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url(/images/main/benefits04.png);
+        background-size: 55px 55px;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: underline;
+      color: $gray-500;
+      font-size: 15px;
+    }
+  }
+
+  .blueheart {
+    padding: 70px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    video {
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+
+    h2,
+    a {
+      position: absolute;
+      text-align: center;
+      color: $white;
+      z-index: 2;
+    }
+
+    h2 {
+      font-family: "Newyork";
+      font-size: 20px;
+      top: 40%;
+    }
+
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(50% + 20px);
+      color: $white;
+      font-size: 13px;
+      background-color: #0a4f84;
+      padding: 10px 20px;
+      border-radius: 20px;
+      z-index: 2;
+    }
+  }
+
+  .instagram {
+    width: 100%;
+    height: 450px;
+    padding: 0 20px;
+    position: relative;
+    h2 {
+      font-family: "Newyork";
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .instagram_img {
+      display: block;
+      li {
+        width: 33.333333%;
+        padding: 5px;
+        margin-bottom: 0;
+        float: left;
+        a {
+          transition: transform 0.3s;
+          img {
+            width: 100%;
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
