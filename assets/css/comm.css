@@ -494,7 +494,7 @@ body {
 #footer .ft_info ul li {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 #main .intro {
