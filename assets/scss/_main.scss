@@ -88,7 +88,7 @@
         float: left;
         h2,
         p {
-          top: 600px;
+          top: 550px;
         }
       }
       .intro_top {
@@ -139,6 +139,18 @@
           font-size: 15px;
         }
       }
+    }
+  }
+
+  @media (min-width: 481px) {
+    .bestitem {
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .bestitem {
+      height: 800px;
+      padding: 150px 0;
     }
   }
 

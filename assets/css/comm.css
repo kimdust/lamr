@@ -586,7 +586,7 @@ body {
   #main .intro .intro_top p,
   #main .intro .intro_bottom h2,
   #main .intro .intro_bottom p {
-    top: 600px;
+    top: 550px;
   }
   #main .intro .intro_top {
     background-image: url(/images/main/D-intro-top.png);
@@ -631,6 +631,12 @@ body {
 }
 #main .bestitem swiper-slide a span {
   font-size: 15px;
+}
+@media (min-width: 1281px) {
+  #main .bestitem {
+    height: 800px;
+    padding: 150px 0;
+  }
 }
 #main .benefits {
   height: 450px;
