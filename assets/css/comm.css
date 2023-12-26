@@ -755,6 +755,18 @@ body {
   border-radius: 20px;
   z-index: 2;
 }
+@media (min-width: 481px) {
+  #main .blueheart {
+    height: 800px;
+    padding: 100px 0;
+  }
+}
+@media (min-width: 1281px) {
+  #main .blueheart {
+    height: 1100px;
+    padding: 150px 0;
+  }
+}
 #main .instagram {
   width: 100%;
   height: 450px;

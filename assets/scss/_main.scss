@@ -142,11 +142,6 @@
     }
   }
 
-  @media (min-width: 481px) {
-    .bestitem {
-    }
-  }
-
   @media (min-width: 1281px) {
     .bestitem {
       height: 800px;
@@ -284,6 +279,20 @@
     }
   }
 
+  @media (min-width: 481px) {
+    .blueheart {
+      height: 800px;
+      padding: 100px 0;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .blueheart {
+      height: 1100px;
+      padding: 150px 0;
+    }
+  }
+
   .instagram {
     width: 100%;
     height: 450px;
@@ -314,6 +323,16 @@
           }
         }
       }
+    }
+  }
+
+  @media (min-width: 481px) {
+    .instagram {
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .instagram {
     }
   }
 }
