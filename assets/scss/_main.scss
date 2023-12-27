@@ -86,7 +86,7 @@
           font-size: 40px;
         }
         p {
-          font-size: 20px;
+          font-size: 18px;
           margin-top: 80px;
         }
       }
@@ -150,7 +150,7 @@
 
   @media (min-width: 1280px) {
     .bestitem {
-      height: 800px;
+      height: 900px;
       padding: 150px 200px;
       h2 {
         font-size: 40px;
@@ -159,22 +159,16 @@
         a {
           img {
             width: 300px;
-            margin: 30px 0 20px 0;
+            margin: 40px 0 20px 0;
           }
           strong {
-            display: block;
-            font-size: 1.25rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 23px;
           }
           p {
-            font-size: 13px;
-            font-weight: 300;
-            color: $gray-500;
-            margin-bottom: 10px;
+            font-size: 16px;
           }
           span {
-            font-size: 15px;
+            font-size: 18px;
           }
         }
       }
@@ -206,6 +200,9 @@
       height: 130px;
       box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
+      .txt1280 {
+        display: none;
+      }
     }
     .box1 {
       &::before {
@@ -288,8 +285,36 @@
 
   @media (min-width: 1280px) {
     .benefits {
-      height: 600px;
-      padding: 150px 0;
+      height: 800px;
+      padding: 150px 200px;
+      h2 {
+        font-size: 40px;
+      }
+      .benefits_box {
+        height: 350px;
+        font-size: 23px;
+        margin: 60px 0;
+        .txt1280 {
+          display: block;
+          font-size: 16px;
+          color: $gray-500;
+          padding: 10px;
+        }
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        &::before {
+          background-size: 145px 145px;
+          width: 145px;
+          height: 145px;
+        }
+      }
+      a {
+        margin-top: 20px;
+        font-size: 18px;
+      }
     }
   }
 
@@ -299,6 +324,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .txt1280_2 {
+      display: none;
+    }
 
     h2,
     a {
@@ -337,6 +366,23 @@
   @media (min-width: 1280px) {
     .blueheart {
       padding: 150px 0;
+      .txt1280_2 {
+        display: block;
+        position: absolute;
+        text-align: center;
+        color: $white;
+        z-index: 2;
+        font-weight: lighter;
+      }
+      h2 {
+        font-size: 40px;
+        top: 33%;
+      }
+      a {
+        top: calc(60% + 20px);
+        font-size: 20px;
+        border-radius: 50px;
+      }
     }
   }
 
@@ -382,6 +428,14 @@
 
   @media (min-width: 1280px) {
     .instagram {
+      padding: 70px 200px 200px 200px;
+      h2 {
+        font-size: 40px;
+      }
+      .instagram_img {
+        margin-top: 60px;
+        padding: 0 300px;
+      }
     }
   }
 }
