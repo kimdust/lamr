@@ -127,6 +127,37 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  #header {
+    height: 100px;
+    .header_close {
+      padding: 33px 200px;
+      .logo {
+        img {
+          max-width: 170px;
+        }
+      }
+      .menu_left {
+        .side_menu {
+          .la-bars,
+          .la-times {
+            font-size: 35px;
+            top: 15px;
+          }
+        }
+      }
+      .menu_right {
+        a {
+          .la-user {
+            font-size: 35px;
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
 #footer {
   .ft_list {
     width: 100%;
