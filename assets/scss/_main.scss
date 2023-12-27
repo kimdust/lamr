@@ -54,29 +54,21 @@
     }
   }
 
-  @media (min-width: 481px) {
+  @media (min-width: 480px) {
     .intro {
       .intro_top {
         background-image: url(/images/main/1280-intro-top.png);
         height: 450px;
-        h2,
-        p {
-          top: 200px;
-        }
       }
       .intro_bottom {
         background-image: url(/images/main/1280-intro-bottom.png);
         margin-top: 510px;
         height: 450px;
-        h2,
-        p {
-          top: 200px;
-        }
       }
     }
   }
 
-  @media (min-width: 1281px) {
+  @media (min-width: 1280px) {
     .intro {
       position: relative;
       .intro_top,
@@ -88,7 +80,14 @@
         float: left;
         h2,
         p {
-          top: 550px;
+          top: 500px;
+        }
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 80px;
         }
       }
       .intro_top {
@@ -142,10 +141,43 @@
     }
   }
 
-  @media (min-width: 1281px) {
+  @media (min-width: 480px) {
+    .bestitem {
+      height: 750px;
+      padding: 150px 0 50px 0;
+    }
+  }
+
+  @media (min-width: 1280px) {
     .bestitem {
       height: 800px;
-      padding: 150px 0;
+      padding: 150px 200px;
+      h2 {
+        font-size: 40px;
+      }
+      swiper-slide {
+        a {
+          img {
+            width: 300px;
+            margin: 30px 0 20px 0;
+          }
+          strong {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 13px;
+            font-weight: 300;
+            color: $gray-500;
+            margin-bottom: 10px;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 
@@ -238,18 +270,35 @@
     }
   }
 
+  @media (min-width: 480px) {
+    .benefits {
+      height: 350px;
+      margin: 40px 0;
+      .benefits_box {
+        width: calc(25% - 20px);
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+      a {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .benefits {
+      height: 600px;
+      padding: 150px 0;
+    }
+  }
+
   .blueheart {
     padding: 70px 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    video {
-      max-width: 100%;
-      height: auto;
-      z-index: 1;
-    }
 
     h2,
     a {
@@ -279,25 +328,23 @@
     }
   }
 
-  @media (min-width: 481px) {
+  @media (min-width: 480px) {
     .blueheart {
-      height: 800px;
-      padding: 100px 0;
+      padding: 70px 0;
     }
   }
 
-  @media (min-width: 1281px) {
+  @media (min-width: 1280px) {
     .blueheart {
-      height: 1100px;
       padding: 150px 0;
     }
   }
 
   .instagram {
     width: 100%;
-    height: 450px;
-    padding: 0 20px;
+    height: auto;
     position: relative;
+    padding: 50px 20px 100px 20px;
     h2 {
       font-family: "Newyork";
       font-size: 1.25rem;
@@ -305,16 +352,17 @@
       margin-bottom: 30px;
     }
     .instagram_img {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       li {
-        width: 33.333333%;
+        flex: 0 0 33.333333%;
         padding: 5px;
-        margin-bottom: 0;
-        float: left;
+        box-sizing: border-box;
         a {
           transition: transform 0.3s;
           img {
             width: 100%;
+            display: block;
           }
           &:hover {
             img {
@@ -326,20 +374,14 @@
     }
   }
 
-  @media (min-width: 481px) {
+  @media (min-width: 480px) {
     .instagram {
+      padding: 50px 50px 100px 50px;
     }
   }
 
-  @media (min-width: 1281px) {
+  @media (min-width: 1280px) {
     .instagram {
     }
   }
 }
-
-// Mobile S – 320px
-// Mobile M – 375px
-// Mobile L – 425px
-// Tablet – 768px
-// Laptop – 1024px
-// Laptop L – 1440px

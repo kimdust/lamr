@@ -155,11 +155,13 @@
           <h2>BEST ITEM</h2>
           <swiper-container
             class="mySwiper"
+            init="false"
+            class="mySwiper"
             navigation="ture"
-            space-between="30"
             centered-slides="true"
             autoplay-delay="2500"
             autoplay-disable-on-interaction="false"
+            loopAdditionalSlides="1"
           >
             <swiper-slide>
               <a href="#">
@@ -442,5 +444,20 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const swiperEl = document.querySelector("swiper-container");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 1,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
   </body>
 </html>

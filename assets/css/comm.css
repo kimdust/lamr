@@ -274,7 +274,7 @@ body {
 #header .header_close {
   position: relative;
   height: 3.75rem;
-  padding: 1.25rem;
+  padding: 18px 20px;
 }
 #header .header_close .logo {
   position: absolute;
@@ -368,9 +368,6 @@ body {
   font-size: 25px;
 }
 
-#footer {
-  padding-top: 100px;
-}
 #footer .ft_list {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
@@ -387,13 +384,13 @@ body {
   width: 120px;
 }
 #footer .ft_list dt a {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   color: #326b36;
 }
 #footer .ft_list dd {
   width: calc(100% - 120px);
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
   overflow: hidden;
   white-space: nowrap;
@@ -551,26 +548,18 @@ body {
   font-size: 0.8125rem;
   font-weight: 300;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   #main .intro .intro_top {
     background-image: url(/images/main/1280-intro-top.png);
     height: 450px;
-  }
-  #main .intro .intro_top h2,
-  #main .intro .intro_top p {
-    top: 200px;
   }
   #main .intro .intro_bottom {
     background-image: url(/images/main/1280-intro-bottom.png);
     margin-top: 510px;
     height: 450px;
   }
-  #main .intro .intro_bottom h2,
-  #main .intro .intro_bottom p {
-    top: 200px;
-  }
 }
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
   #main .intro {
     position: relative;
   }
@@ -586,7 +575,16 @@ body {
   #main .intro .intro_top p,
   #main .intro .intro_bottom h2,
   #main .intro .intro_bottom p {
-    top: 550px;
+    top: 500px;
+  }
+  #main .intro .intro_top h2,
+  #main .intro .intro_bottom h2 {
+    font-size: 40px;
+  }
+  #main .intro .intro_top p,
+  #main .intro .intro_bottom p {
+    font-size: 20px;
+    margin-top: 80px;
   }
   #main .intro .intro_top {
     background-image: url(/images/main/D-intro-top.png);
@@ -632,10 +630,38 @@ body {
 #main .bestitem swiper-slide a span {
   font-size: 15px;
 }
-@media (min-width: 1281px) {
+@media (min-width: 480px) {
+  #main .bestitem {
+    height: 750px;
+    padding: 150px 0 50px 0;
+  }
+}
+@media (min-width: 1280px) {
   #main .bestitem {
     height: 800px;
-    padding: 150px 0;
+    padding: 150px 200px;
+  }
+  #main .bestitem h2 {
+    font-size: 40px;
+  }
+  #main .bestitem swiper-slide a img {
+    width: 300px;
+    margin: 30px 0 20px 0;
+  }
+  #main .bestitem swiper-slide a strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #main .bestitem swiper-slide a p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #9e9e9e;
+    margin-bottom: 10px;
+  }
+  #main .bestitem swiper-slide a span {
+    font-size: 15px;
   }
 }
 #main .benefits {
@@ -718,18 +744,33 @@ body {
   color: #9e9e9e;
   font-size: 15px;
 }
+@media (min-width: 480px) {
+  #main .benefits {
+    height: 350px;
+    margin: 40px 0;
+  }
+  #main .benefits .benefits_box {
+    width: calc(25% - 20px);
+  }
+  #main .benefits h2 {
+    margin-bottom: 0;
+  }
+  #main .benefits a {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1280px) {
+  #main .benefits {
+    height: 600px;
+    padding: 150px 0;
+  }
+}
 #main .blueheart {
   padding: 70px 0;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-}
-#main .blueheart video {
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
 }
 #main .blueheart h2,
 #main .blueheart a {
@@ -755,23 +796,21 @@ body {
   border-radius: 20px;
   z-index: 2;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   #main .blueheart {
-    height: 800px;
-    padding: 100px 0;
+    padding: 70px 0;
   }
 }
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
   #main .blueheart {
-    height: 1100px;
     padding: 150px 0;
   }
 }
 #main .instagram {
   width: 100%;
-  height: 450px;
-  padding: 0 20px;
+  height: auto;
   position: relative;
+  padding: 50px 20px 100px 20px;
 }
 #main .instagram h2 {
   font-family: "Newyork";
@@ -780,20 +819,26 @@ body {
   margin-bottom: 30px;
 }
 #main .instagram .instagram_img {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 #main .instagram .instagram_img li {
-  width: 33.333333%;
+  flex: 0 0 33.333333%;
   padding: 5px;
-  margin-bottom: 0;
-  float: left;
+  box-sizing: border-box;
 }
 #main .instagram .instagram_img li a {
   transition: transform 0.3s;
 }
 #main .instagram .instagram_img li a img {
   width: 100%;
+  display: block;
 }
 #main .instagram .instagram_img li a:hover img {
   transform: scale(1.1);
+}
+@media (min-width: 480px) {
+  #main .instagram {
+    padding: 50px 50px 100px 50px;
+  }
 }/*# sourceMappingURL=comm.css.map */
