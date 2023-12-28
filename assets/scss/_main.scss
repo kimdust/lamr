@@ -80,14 +80,14 @@
         float: left;
         h2,
         p {
-          top: 500px;
+          top: 550px;
         }
         h2 {
-          font-size: 40px;
+          font-size: 35px;
         }
         p {
           font-size: 18px;
-          margin-top: 80px;
+          margin-top: 70px;
         }
       }
       .intro_top {
@@ -110,10 +110,6 @@
     swiper-container {
       margin: 20px;
       --swiper-theme-color: #326b36;
-      swiper-button-next svg,
-      swiper-button-prev svg {
-        width: 50%;
-      }
     }
     swiper-slide {
       a {
@@ -153,7 +149,7 @@
       height: 900px;
       padding: 150px 200px;
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
       swiper-slide {
         a {
@@ -200,6 +196,7 @@
       height: 130px;
       box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
+      font-weight: 600;
       .txt1280 {
         display: none;
       }
@@ -286,9 +283,9 @@
   @media (min-width: 1280px) {
     .benefits {
       height: 800px;
-      padding: 150px 200px;
+      padding: 150px 200px 20px 200px;
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
       .benefits_box {
         height: 350px;
@@ -299,6 +296,7 @@
           font-size: 16px;
           color: $gray-500;
           padding: 10px;
+          font-weight: 300;
         }
       }
       .box1,
@@ -340,7 +338,7 @@
     h2 {
       font-family: "Newyork";
       font-size: 20px;
-      top: 40%;
+      top: 38%;
     }
 
     a {
@@ -365,7 +363,7 @@
 
   @media (min-width: 1280px) {
     .blueheart {
-      padding: 150px 0;
+      padding: 120px 0;
       .txt1280_2 {
         display: block;
         position: absolute;
@@ -375,7 +373,7 @@
         font-weight: lighter;
       }
       h2 {
-        font-size: 40px;
+        font-size: 35px;
         top: 33%;
       }
       a {
@@ -430,11 +428,11 @@
     .instagram {
       padding: 70px 200px 200px 200px;
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
       .instagram_img {
         margin-top: 60px;
-        padding: 0 300px;
+        padding: 0 220px;
       }
     }
   }
